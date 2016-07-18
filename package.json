@@ -1,0 +1,19 @@
+{
+  "name": "cartoon-avatar",
+  "version": "1.0.0",
+  "description": "A Node js library for cartoon style avatars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gravatar",
+    "avatar",
+    "cartoon",
+    "avatar",
+    "cartoon-avatar",
+    "cartoon-gravatar"
+  ],
+  "author": "Ashwin Valento <ashwinvalento@gmail.com> (https://ashwinvalento.github.io)",
+  "license": "ISC"
+}

@@ -4,7 +4,7 @@
   "description": "A Node js library for cartoon style avatars",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/mocha/bin/mocha -R spec"
   },
   "keywords": [
     "gravatar",
@@ -12,8 +12,14 @@
     "cartoon",
     "avatar",
     "cartoon-avatar",
-    "cartoon-gravatar"
+    "cartoon-gravatar",
+    "toon",
+    "toon avatar"
   ],
   "author": "Ashwin Valento <ashwinvalento@gmail.com> (https://ashwinvalento.github.io)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
 }

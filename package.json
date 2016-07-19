@@ -1,6 +1,6 @@
 {
   "name": "cartoon-avatar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node js library for cartoon style avatars",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,11 @@
     "cartoon-avatar",
     "cartoon-gravatar",
     "toon",
-    "toon avatar"
+    "toon avatar",
+    "avatar toon",
+    "animated avatar",
+    "anime",
+    "anime avatar"
   ],
   "author": "Ashwin Valento <ashwinvalento@gmail.com> (https://ashwinvalento.github.io)",
    "repository": {

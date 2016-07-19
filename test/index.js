@@ -6,6 +6,7 @@ describe('generate_avatar', function() {
 	
 	  it('should generate correct uri given no options', function() {
 		  toonavatar.generate_avatar().should.be.ok;
+		  toonavatar.generate_avatar().should.not.have.string("undefined");
 	  });
 	  
 	  it('should generate correct uri given gender as male and an id', function() {

@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Ashwinvalento/cartoon-avatar.svg?branch=master)](https://travis-ci.org/Ashwinvalento/cartoon-avatar)
 
 Node.js cartoon avatar library
 ========================

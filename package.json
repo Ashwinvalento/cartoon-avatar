@@ -17,7 +17,11 @@
     "toon avatar"
   ],
   "author": "Ashwin Valento <ashwinvalento@gmail.com> (https://ashwinvalento.github.io)",
-  "license": "ISC",
+   "repository": {
+    "type": "git",
+    "url": "git@github.com:Ashwinvalento/cartoon-avatar.git"
+  }
+  "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3"

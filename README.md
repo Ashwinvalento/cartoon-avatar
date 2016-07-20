@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Ashwinvalento/cartoon-avatar.svg?branch=master)](https://travis-ci.org/Ashwinvalento/cartoon-avatar)
+[![npm](https://img.shields.io/npm/v/ssldecoder.svg?maxAge=3600)](https://github.com/Ashwinvalento/cartoon-avatar/blob/master/CHANGELOG.md) [![Build Status](https://travis-ci.org/Ashwinvalento/cartoon-avatar.svg?branch=master)](https://travis-ci.org/Ashwinvalento/cartoon-avatar) [![Code Climate](https://codeclimate.com/github/Ashwinvalento/cartoon-avatar/badges/gpa.svg)](https://codeclimate.com/github/Ashwinvalento/cartoon-avatar)
 
 Node.js cartoon avatar library
 ========================

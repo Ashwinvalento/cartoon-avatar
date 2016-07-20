@@ -4,6 +4,7 @@ node_js:
 - '6.1'
 - '4.4.7'
 - iojs
+script: npm run coverage
 addons:
     code_climate:
         repo_token: 3b50b6d7c96148dbc8ad435dcd5ab64361d8e54d62e7fed3e85c290cff3b2557

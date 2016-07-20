@@ -14,7 +14,6 @@ describe('generate_avatar', function() {
 		  toonavatar.generate_avatar({"gender":"male","id":75}).should.equal(baseURL+"male/75.png");
 		  toonavatar.generate_avatar({"gender":"male","id":129}).should.equal(baseURL+"male/129.png");
 		  toonavatar.generate_avatar({"gender":"male","id":129}).should.not.equal(baseURL+"female/129.png");
-
 		  
 	  });
 	  
@@ -65,4 +64,15 @@ describe('generate_avatar', function() {
 
 	  });
 	  
+	  it('should generate correct uri given gender as male and an id greater than the LIMIT', function() {
+		  toonavatar.generate_avatar({"gender":"male","id":150}).should.not.have.string("undefined");
+		  toonavatar.generate_avatar({"gender":"male","id":150}).should.not.equal(baseURL+"male/150.png");
+		  toonavatar.generate_avatar({"gender":"male","id":130}).should.equal(baseURL+"male/1.png");
+	  });
+	  
+	  it('should generate correct uri given gender as female and an id greater than the LIMIT', function() {
+		  toonavatar.generate_avatar({"gender":"female","id":10}).should.not.have.string("undefined");
+		  toonavatar.generate_avatar({"gender":"female","id":150}).should.not.equal(baseURL+"female/150.png");
+		  toonavatar.generate_avatar({"gender":"female","id":115}).should.equal(baseURL+"female/1.png");
+	  });
 });

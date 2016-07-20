@@ -27,8 +27,9 @@ toonavatar.generate_avatar(options);
  * `id` can be any number within the Range limit specified below. 
  
   ` id Range` for a given gender :
-	* MALE : 1 - 129
+	* MALE : 1 - 129 
 	* FEMALE : 1 - 114
+`Note : ` id's greater than the limit will start over from 1
 
 ### Examples
 

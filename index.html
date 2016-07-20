@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cartoon-avatar by Ashwinvalento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Cartoon-avatar</h1>
+      <h2 class="project-tagline">A library to generate cartoon style avatar URLs in Node.js</h2>
+      <a href="https://github.com/Ashwinvalento/cartoon-avatar" class="btn">View on GitHub</a>
+      <a href="https://github.com/Ashwinvalento/cartoon-avatar/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Ashwinvalento/cartoon-avatar/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><a href="https://travis-ci.org/Ashwinvalento/cartoon-avatar"><img src="https://travis-ci.org/Ashwinvalento/cartoon-avatar.svg?branch=master" alt="Build Status"></a></p>
+
+<h1>
+<a id="nodejs-cartoon-avatar-library" class="anchor" href="#nodejs-cartoon-avatar-library" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Node.js cartoon avatar library</h1>
+
+<p>A library to generate cartoon style avatar URLs in Node.js</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install cartoon-avatar</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> toonavatar <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>cartoon-avatar<span class="pl-pds">'</span></span>);
+
+<span class="pl-smi">toonavatar</span>.<span class="pl-en">generate_avatar</span>();
+<span class="pl-smi">toonavatar</span>.<span class="pl-en">generate_avatar</span>(options);
+</pre></div>
+
+<p><code>options</code>:</p>
+
+<ul>
+<li>
+<code>Gender</code> can be <code>male</code> or <code>m</code> or <code>female</code> or <code>f</code> .</li>
+<li>
+<p><code>id</code> can be any number within the Range limit specified below. </p>
+
+<p><code>id Range</code> for a given gender :</p>
+
+<ul>
+<li>MALE : 1 - 129 </li>
+<li>FEMALE : 1 - 114</li>
+</ul>
+</li>
+</ul>
+
+<p><code>Note :</code> id's greater than the limit will start over from 1.</p>
+
+<h3>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples</h3>
+
+<div class="highlight highlight-source-js"><pre>
+<span class="pl-k">var</span> toonavatar <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>cartoon-avatar<span class="pl-pds">'</span></span>);
+
+<span class="pl-k">var</span> url <span class="pl-k">=</span> <span class="pl-smi">toonavatar</span>.<span class="pl-en">generate_avatar</span>()
+<span class="pl-c">//Generates Image URL with random gender avatar.</span>
+<span class="pl-c">//https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/10.png</span>
+<span class="pl-c">//https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/86.png</span></pre></div>
+
+<p><code>Image Preview :</code></p>
+
+<p><img src="https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/10.png" alt="Random Avatar"> <img src="https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/86.png" alt="Random Avatar"></p>
+
+<pre><code>var url = toonavatar.generate_avatar({"gender":"male"})
+//Generates Image URL with random Male avatars
+//https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/45.png
+</code></pre>
+
+<p><code>Image Preview :</code></p>
+
+<p><img src="https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/45.png" alt="Random Avatar"> </p>
+
+<pre><code>var url = toonavatar.generate_avatar({"gender":"female"})
+//Generates Image URL with random Female avatars
+//https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/68.png
+</code></pre>
+
+<p><code>Image Preview :</code></p>
+
+<p><img src="https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/68.png" alt="Random Avatar"> </p>
+
+<pre><code>var url = toonavatar.generate_avatar({"gender":"male","id":5})
+//Generates Image URL with Male avatar having id 5
+//https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/5.png
+</code></pre>
+
+<p><code>Image Preview :</code></p>
+
+<p><img src="https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/5.png" alt="Random Avatar"> </p>
+
+<pre><code>var url = toonavatar.generate_avatar({"gender":"female","id":5})
+//Generates Image URL with Female avatar having id 5
+//https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/5.png
+</code></pre>
+
+<p><code>Image Preview :</code></p>
+
+<p><img src="https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/5.png" alt="Random Avatar"> </p>
+
+<h2>
+<a id="running-test" class="anchor" href="#running-test" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Running test</h2>
+
+<div class="highlight highlight-source-shell"><pre>$ npm <span class="pl-c1">test</span></pre></div>
+
+<h2>
+<a id="avatar-image-credits" class="anchor" href="#avatar-image-credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Avatar Image Credits</h2>
+
+<p><a href="http://www.freepik.com/free-photos-vectors/people">People vector designed by Skydesign - Freepik.com</a>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License:</h2>
+
+<p>(The MIT License)</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Ashwinvalento/cartoon-avatar">Cartoon-avatar</a> is maintained by <a href="https://github.com/Ashwinvalento">Ashwinvalento</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>

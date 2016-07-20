@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/ssldecoder.svg?maxAge=3600)](https://github.com/Ashwinvalento/cartoon-avatar/blob/master/CHANGELOG.md) [![Build Status](https://travis-ci.org/Ashwinvalento/cartoon-avatar.svg?branch=master)](https://travis-ci.org/Ashwinvalento/cartoon-avatar) [![Code Climate](https://codeclimate.com/github/Ashwinvalento/cartoon-avatar/badges/gpa.svg)](https://codeclimate.com/github/Ashwinvalento/cartoon-avatar)
+[![npm version](https://badge.fury.io/js/cartoon-avatar.svg)](https://badge.fury.io/js/cartoon-avatar) [![Build Status](https://travis-ci.org/Ashwinvalento/cartoon-avatar.svg?branch=master)](https://travis-ci.org/Ashwinvalento/cartoon-avatar) [![Code Climate](https://codeclimate.com/github/Ashwinvalento/cartoon-avatar/badges/gpa.svg)](https://codeclimate.com/github/Ashwinvalento/cartoon-avatar) [![Test Coverage](https://codeclimate.com/github/Ashwinvalento/cartoon-avatar/badges/coverage.svg)](https://codeclimate.com/github/Ashwinvalento/cartoon-avatar/coverage)
 
 Node.js cartoon avatar library
 ========================

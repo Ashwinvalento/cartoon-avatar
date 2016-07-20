@@ -4,6 +4,9 @@ Node.js cartoon avatar library
 ========================
 A library to generate cartoon style avatar URLs in Node.js
 
+Demo
+-----
+Try the package live at [tonicdev](https://tonicdev.com/578f236074b6631300d3c805/578f236074b6631300d3c806)
 
 Installation
 -----------

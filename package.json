@@ -21,6 +21,7 @@
     "anime",
     "anime avatar"
   ],
+  "tonicExampleFilename": "tonicExample.js",
   "author": "Ashwin Valento <ashwinvalento@gmail.com> (https://ashwinvalento.github.io)",
   "repository": {
     "type": "git",

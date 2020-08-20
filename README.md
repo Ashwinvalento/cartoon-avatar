@@ -94,8 +94,10 @@ $ npm test
 ```
 
 ## Avatar Image Credits
+
  [People vector designed by Skydesign - Freepik.com](http://www.freepik.com/free-photos-vectors/people).
  
+ Add the necessary atrribitions for the images as mentioned in [Freepik.com](http://www.freepik.com)
 
 License:
 --------
